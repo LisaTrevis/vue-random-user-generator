@@ -1,3 +1,5 @@
+// import {LogoNoGlasses} from "../images/"
+
 const app = Vue.createApp({
   data() {
     return {
@@ -5,14 +7,14 @@ const app = Vue.createApp({
       lastName: 'Trevis',
       email: 'Lisa.Trevis@gmail.com',
       gender: 'female',
-      picture: 'https://randomuser.me/api/portraits/women/10.jpg',
+      picture: './images/FinalHeadshot.jpg',
     }
   },
   methods: {
     async getUser() {
       const res = await fetch('https://randomuser.me/api')
       const { results } = await res.json()
-
+      console.log(results)
       this.firstName = results[0].name.first
       this.lastName = results[0].name.last
       this.email = results[0].email

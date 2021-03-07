@@ -33,14 +33,14 @@ img {
 }
 
 .female {
-  border-color: hotpink;
-  background-color: hotpink;
+  border-color: teal;
+  background-color: teal;
   /* color: #333; */
 }
 
 .male {
-  border-color: gray;
-  background-color: gray;
+  border-color: yellow;
+  background-color: yellow;
   /* color: #333; */
 }
 
